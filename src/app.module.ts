@@ -1,17 +1,13 @@
 import { Module } from '@nestjs/common';
-import { ConfigModule as NestJsConfigModule } from '@nestjs/config';
-import { AuthModule } from './modules/auth/auth.module';
-import { ConfigModule } from './modules/config/config.module';
-import { UsersModule } from './modules/users/users.module';
+import { ConfigModule } from '@nestjs/config';
+import { DemoModule } from './modules/demo/demo.module';
 
 @Module({
   imports: [
-    NestJsConfigModule.forRoot({
+    ConfigModule.forRoot({
       isGlobal: true,
     }),
-    UsersModule,
-    AuthModule,
-    ConfigModule,
+    DemoModule,
   ],
   controllers: [],
   providers: [],

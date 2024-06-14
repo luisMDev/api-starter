@@ -33,11 +33,13 @@
     "docker:init": " npm run prisma:init && npm run build:pro && npm run start"
   },
   "dependencies": {
+    "@arcane-auth/nest-client": "^0.0.26",
     "@aws-sdk/client-s3": "^3.565.0",
     "@bull-board/api": "^5.6.0",
     "@bull-board/express": "^5.6.0",
     "@bull-board/ui": "^5.6.0",
     "@google-cloud/storage": "^7.11.0",
+    "@nestjs/axios": "^3.0.2",
     "@nestjs/bullmq": "^10.1.0",
     "@nestjs/common": "^10.0.0",
     "@nestjs/config": "^3.2.2",
